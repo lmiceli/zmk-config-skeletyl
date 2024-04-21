@@ -169,7 +169,7 @@
            bindings = <
     &none       &none       &none       &none       &none       &none   &none       &none       &none   &none
     &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       &none   AS(LBKT)    AS(RBKT)    &none   AS(SEMI)
-    &sys_reset  &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
+    &bootloader &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
                             &trans      &none       &none       &kp LPAR    &kp RPAR    &kp UNDER
             >;
         };
