@@ -5,14 +5,13 @@
 
 // Modified keymap based on personal experience, with some improvements based on Miryoku layout.
 
-#define QWERTY  0
-#define COLDH   1
-#define NAV     2
-#define NUM     3
-#define PRGRM   4
-#define FUN     5
-#define ILLUST  6
-#define GAME    7
+#define COLDH   0
+#define NAV     1
+#define NUM     2
+#define PRGRM   3
+#define FUN     4
+#define ILLUST  5
+#define GAME    6
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
@@ -139,21 +138,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            bindings = <
-    &kp Q       &kp W       &kp E       &kp R           &kp T           &kp Y       &kp U       &kp I       &kp O           &kp P
-    &hmp LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F     &kp G           &kp H       &hm LSHFT J &hm LCTRL K  &hm LALT L      &hmp LGUI SQT
-    &kp Z       &hm RALT X  &kp C       &kp V           &kp B           &kp N       &kp M       &kp COMMA   &hm RALT DOT    &kp FSLH
-                            &kp DEL     &lt NUM SPACE   &lt PRGRM TAB     &kp BSPC    &lt NAV RET &lt FUN ESC
-            >;
-        };
-
-        colemak_dh {
+       colemak_dh {
             bindings = <
     &kp Q       &kp W       &kp F       &kp P           &kp B           &kp J       &kp L       &kp U       &kp Y           &kp SQT
     &hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
     &kp Z       &hm RALT X  &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &hm RALT DOT    &kp FSLH
-                            &kp DEL     &lt NUM SPACE   &lt PRGRM TAB     &kp BSPC    &lt NAV RET &lt FUN ESC
+                            &kp ESC     &lt NUM BSPC   &lt PRGRM TAB    &kp SPACE   &lt NAV RET &lt FUN DEL
             >;
         };
 
@@ -179,7 +169,7 @@
            bindings = <
     &none       &none       &none       &none       &none       &none   &none       &none       &none   &none
     &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       &none   AS(LBKT)    AS(RBKT)    &none   AS(SEMI)
-    &none       &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
+    &sys_reset  &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
                             &trans      &none       &none       &kp LPAR    &kp RPAR    &kp UNDER
             >;
         };
