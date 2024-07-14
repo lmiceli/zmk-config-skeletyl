@@ -147,7 +147,6 @@
     &hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
     &kp Z       &hm RALT X  &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &hm RALT DOT    &kp FSLH
                             &kp ESC     &lt ARROW BSPC   &lt PRGRM TAB    &kp DEL   &lt NAV SPACE &lt FUN RET
-//       LT_NAV_ESC,   LT_ARROW_BSPC, LT_MOUSE_TAB,    /**/  LT_FUNCTION_DEL, LT_NUMBER_SPC, LT_SYMBOL_ENT
             >;
         };
 
@@ -162,16 +161,10 @@
 
         arrow_layer {
             bindings = <
-            
-                    // wip
-//KC_LGUI,       KC_BTN3,    KC_BTN2,    KC_BTN1,    KC_NO,         /**/ KC_PGUP,  KC_HOME, KC_UP,   KC_END,  KC_PGDN,
-    &none       &mkp MB3        &mkp MB2    &mkp MB1 &none               &none     &none    &kp up   &none    &none
-//LALT(KC_LEFT), KC_LALT,    KC_LCTL,    KC_LSFT,    LALT(KC_RGHT), /**/ LCTL(KC_PGUP), KC_LEFT, KC_DOWN, KC_RGHT, LCTL(KC_PGDN),
-    &none       &none           &none       &none           &none        &none     &kp left &kp down &kp right &none
-//LCTL(KC_Z),    LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,         /**/ KC_CAPS,  KC_F11, KC_F7,   KC_F8,   KC_F9,
-    &none       &none           &none       &none           /*&kp LC(MINUS)*/    &none  &none       &none        &none         &none        &none
-                                        //ALT_TAB,  KC_NO,   KC_NO,  /**/ KC_PGUP, ALT_TAB, KC_PGDN
-                            &none       &none           &none                     &none       &kb SPACE    &kp LA(F4)
+    &none       &none        &none       &none       &none           &none     &none        &kp UP   &none    &none
+    &none       &none        &none       &none       &none           &none     &kp LEFT     &kp DOWN &kp RIGHT &none
+    &none       &none        &none       &none       &none           &none     &none        &none    &none     &none
+                             &none       &none       &none           &none     &kb SPACE    &kp LA(F4)
             >;
         };
 
