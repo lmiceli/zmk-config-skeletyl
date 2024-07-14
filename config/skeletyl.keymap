@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
 
 // Modified keymap based on personal experience, with some improvements based on Miryoku layout.
 
@@ -143,7 +144,7 @@
     &kp Q       &kp W       &kp F       &kp P           &kp B           &kp J       &kp L       &kp U       &kp Y           &kp SQT
     &hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
     &kp Z       &hm RALT X  &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &hm RALT DOT    &kp FSLH
-                            &kp ESC     &lt NUM BSPC   &lt PRGRM TAB    &kp DEL   &lt NAV SPACE &lt FUN RET
+                            &kp ESC     &lt ARROW BSPC   &lt PRGRM TAB    &kp DEL   &lt NAV SPACE &lt FUN RET
 //       LT_NAV_ESC,   LT_ARROW_BSPC, LT_MOUSE_TAB,    /**/  LT_FUNCTION_DEL, LT_NUMBER_SPC, LT_SYMBOL_ENT
             >;
         };
@@ -153,7 +154,21 @@
     &kp HOME    &kp PG_UP       &kp UP      &kp PG_DN       &kp CAPS    &none       &none       &none       &none       &none
     &kp END     &kp LEFT        &kp DOWN    &kp RIGHT       &kp INS     &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp LC(Z)   &kp LC(LEFT)    &none       &kp LC(RIGHT)   &kp LC(Y)   &none       &none       &none       &none       &none
-                                &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none     
+                                &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none
+
+        arrow_layer {
+            bindings = <
+                    // wip
+//  KC_NO,      KC_BTN3,        KC_BTN2,    KC_BTN1,        LCTL(KC_PLUS),     /**/   LCAG(KC_1), LCAG(KC_2),  LCAG(KC_3),   LCAG(KC_4),  LCAG(KC_5),
+    &none       &mkp MB3        &mkp MB2    &mkp MB1        LC(+)                     &none       &none        &none         &none        &none
+//KC_NO, LGUI(LCTL(KC_LEFT)), LGUI(KC_TAB), LGUI(LCTL(KC_RGHT)), LCTL(KC_PGUP),/**/   KC_NO ,     LGUI(KC_LEFT),LGUI(KC_RGHT), KC_VOLD,   KC_VOLU,
+    &none       &none           &none       &none           &none                     &none       &kp LG(left) &kp LG(right) &kp C_VOL_DN &kp C_VOL_UP
+//  KC_NO, KC_NO,               KC_NO,        KC_NO,        LCTL(KC_MINS),   /**/ SGUI(KC_DEL), SGUI(KC_COMM), SGUI( KC_DOT), KC_MPLY, KC_MUTE,
+    &none       &none           &none       &none           LC(-)                     &none       &none        &none         &none        &none
+//                              KC_NO,      KC_NO,          ALT_TAB,         /**/     KC_NO,      KC_SPC,  LALT(KC_F4)
+                                &none       &none           &none                     &none       &kb SPACE    &LA(F4)
+
+
             >;
         };
 
