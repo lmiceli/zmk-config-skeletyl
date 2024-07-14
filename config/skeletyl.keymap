@@ -162,9 +162,10 @@
 
         arrow_layer {
             bindings = <
+            
                     // wip
 //KC_LGUI,       KC_BTN3,    KC_BTN2,    KC_BTN1,    KC_NO,         /**/ KC_PGUP,  KC_HOME, KC_UP,   KC_END,  KC_PGDN,
-    &none       &mkp MB3        &mkp MB2    &mkp MB1        /*&kp LC(PLUS)*/    &none &none     &none    &kp up   &none    &none
+    &none       &mkp MB3        &mkp MB2    &mkp MB1 &none               &none     &none    &kp up   &none    &none
 //LALT(KC_LEFT), KC_LALT,    KC_LCTL,    KC_LSFT,    LALT(KC_RGHT), /**/ LCTL(KC_PGUP), KC_LEFT, KC_DOWN, KC_RGHT, LCTL(KC_PGDN),
     &none       &none           &none       &none           &none        &none     &kp left &kp down &kp right &none
 //LCTL(KC_Z),    LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,         /**/ KC_CAPS,  KC_F11, KC_F7,   KC_F8,   KC_F9,
