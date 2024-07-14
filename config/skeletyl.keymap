@@ -143,7 +143,8 @@
     &kp Q       &kp W       &kp F       &kp P           &kp B           &kp J       &kp L       &kp U       &kp Y           &kp SQT
     &hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
     &kp Z       &hm RALT X  &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &hm RALT DOT    &kp FSLH
-                            &kp ESC     &lt NUM BSPC   &lt PRGRM TAB    &kp SPACE   &lt NAV RET &lt FUN DEL
+                            &kp ESC     &lt NUM BSPC   &lt PRGRM TAB    &kp DEL   &lt NAV SPACE &lt FUN RET
+//       LT_NAV_ESC,   LT_ARROW_BSPC, LT_MOUSE_TAB,    /**/  LT_FUNCTION_DEL, LT_NUMBER_SPC, LT_SYMBOL_ENT
             >;
         };
 
