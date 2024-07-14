@@ -152,7 +152,7 @@
 
         nav_layer {
             bindings = <
-    &kp HOME    &kp PG_UP       &kp UP      &kp PG_DN       &kp CAPS    &none       &none       &none       &none       &none
+    &none       &mkp MB3        &mkp MB2    &mkp MB1        &none       &none       &none       &none       &none       &none
     &kp END     &kp LEFT        &kp DOWN    &kp RIGHT       &kp INS     &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp LC(Z)   &kp LC(LEFT)    &none       &kp LC(RIGHT)   &kp LC(Y)   &none       &none       &none       &none       &none
                                 &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none
@@ -161,7 +161,11 @@
 
         arrow_layer {
             bindings = <
-    &none       &none        &none       &none       &none           &none     &none        &kp UP   &none    &none
+
+    &kp LGUI     &mkp MB3    &mkp MB2    &mkp MB1    &none           &kp PG_UP &kp HOME     &kp UP   &kp END  &kp PG_DN
+//LALT(KC_LEFT), KC_LALT,    KC_LCTL,    KC_LSFT,    LALT(KC_RGHT), /**/ LCTL(KC_PGUP), KC_LEFT, KC_DOWN, KC_RGHT, LCTL(KC_PGDN),
+//        LCTL(KC_Z),    LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,         /**/ KC_CAPS,  KC_F11, KC_F7,   KC_F8,   KC_F9,
+//        ALT_TAB,  KC_NO,   KC_NO,  /**/ KC_PGUP, ALT_TAB, KC_PGDN
     &none       &none        &none       &none       &none           &none     &kp LEFT     &kp DOWN &kp RIGHT &none
     &none       &none        &none       &none       &none           &none     &none        &none    &none     &none
                              &none       &none       &none           &none     &kp SPACE    &kp LA(F4)
