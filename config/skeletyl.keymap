@@ -8,11 +8,12 @@
 
 #define COLDH   0
 #define NAV     1
-#define NUM     2
-#define PRGRM   3
-#define FUN     4
-#define ILLUST  5
-#define GAME    6
+#define ARROW   2
+#define PRGRM   3 // for now, instead of mouse
+#define SYM     4
+#define NUM     5
+#define FUN     6
+#define GAME    7
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
@@ -90,12 +91,13 @@
             bindings = <&kp C_MUTE>;
         };
 
-        // combo for toggling illust layer
-        combo_tg_illust {
-            timeout-ms = <50>;
-            key-positions = <21 22 23>;
-            bindings = <&tog ILLUST>;
-        };
+        // todox: most likely no use for this, maybe as inspiration for a while
+//        // combo for toggling illust layer
+//        combo_tg_illust {
+//            timeout-ms = <50>;
+//            key-positions = <21 22 23>;
+//            bindings = <&tog ILLUST>;
+//        };
 
         // Combo for toggling the Colemak layout
         combo_tg_colemak {
@@ -155,20 +157,54 @@
     &kp END     &kp LEFT        &kp DOWN    &kp RIGHT       &kp INS     &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp LC(Z)   &kp LC(LEFT)    &none       &kp LC(RIGHT)   &kp LC(Y)   &none       &none       &none       &none       &none
                                 &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none
+            >;
+        };
 
         arrow_layer {
             bindings = <
                     // wip
-//  KC_NO,      KC_BTN3,        KC_BTN2,    KC_BTN1,        LCTL(KC_PLUS),     /**/   LCAG(KC_1), LCAG(KC_2),  LCAG(KC_3),   LCAG(KC_4),  LCAG(KC_5),
-    &none       &mkp MB3        &mkp MB2    &mkp MB1        LC(+)                     &none       &none        &none         &none        &none
-//KC_NO, LGUI(LCTL(KC_LEFT)), LGUI(KC_TAB), LGUI(LCTL(KC_RGHT)), LCTL(KC_PGUP),/**/   KC_NO ,     LGUI(KC_LEFT),LGUI(KC_RGHT), KC_VOLD,   KC_VOLU,
-    &none       &none           &none       &none           &none                     &none       &kp LG(left) &kp LG(right) &kp C_VOL_DN &kp C_VOL_UP
-//  KC_NO, KC_NO,               KC_NO,        KC_NO,        LCTL(KC_MINS),   /**/ SGUI(KC_DEL), SGUI(KC_COMM), SGUI( KC_DOT), KC_MPLY, KC_MUTE,
-    &none       &none           &none       &none           LC(-)                     &none       &none        &none         &none        &none
-//                              KC_NO,      KC_NO,          ALT_TAB,         /**/     KC_NO,      KC_SPC,  LALT(KC_F4)
-                                &none       &none           &none                     &none       &kb SPACE    &LA(F4)
+//KC_LGUI,       KC_BTN3,    KC_BTN2,    KC_BTN1,    KC_NO,         /**/ KC_PGUP,  KC_HOME, KC_UP,   KC_END,  KC_PGDN,
+    &none       &mkp MB3        &mkp MB2    &mkp MB1        &kp LC(+)    &none     &none    &kp up   &none    &none
+//LALT(KC_LEFT), KC_LALT,    KC_LCTL,    KC_LSFT,    LALT(KC_RGHT), /**/ LCTL(KC_PGUP), KC_LEFT, KC_DOWN, KC_RGHT, LCTL(KC_PGDN),
+    &none       &none           &none       &none           &none        &none     &kp left &kp down &kp right &none
+//LCTL(KC_Z),    LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,         /**/ KC_CAPS,  KC_F11, KC_F7,   KC_F8,   KC_F9,
+    &none       &none           &none       &none           &kp LC(-)    &none       &none        &none         &none        &none
+                                        //ALT_TAB,  KC_NO,   KC_NO,  /**/ KC_PGUP, ALT_TAB, KC_PGDN
+                            &none       &none           &none                     &none       &kb SPACE    &LA(F4)
+            >;
+        };
 
+//        protonav_layer {
+//            bindings = <
+//                    // wip
+////  KC_NO,      KC_BTN3,        KC_BTN2,    KC_BTN1,        LCTL(KC_PLUS),     /**/   LCAG(KC_1), LCAG(KC_2),  LCAG(KC_3),   LCAG(KC_4),  LCAG(KC_5),
+//    &none       &mkp MB3        &mkp MB2    &mkp MB1        LC(+)                     &none       &none        &none         &none        &none
+////KC_NO, LGUI(LCTL(KC_LEFT)), LGUI(KC_TAB), LGUI(LCTL(KC_RGHT)), LCTL(KC_PGUP),/**/   KC_NO ,     LGUI(KC_LEFT),LGUI(KC_RGHT), KC_VOLD,   KC_VOLU,
+//    &none       &none           &none       &none           &none                     &none       &kp LG(left) &kp LG(right) &kp C_VOL_DN &kp C_VOL_UP
+////  KC_NO, KC_NO,               KC_NO,        KC_NO,        LCTL(KC_MINS),   /**/ SGUI(KC_DEL), SGUI(KC_COMM), SGUI( KC_DOT), KC_MPLY, KC_MUTE,
+//    &none       &none           &none       &none           LC(-)                     &none       &none        &none         &none        &none
+////                              KC_NO,      KC_NO,          ALT_TAB,         /**/     KC_NO,      KC_SPC,  LALT(KC_F4)
+//                                &none       &none           &none                     &none       &kb SPACE    &LA(F4)
+//
+//
+//            >;
+//        };
 
+       prgrm_layer {
+           bindings = <
+    &sys_reset  &none       &none       &none       &none       &none   &none       &none       &none   &none
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       &none   AS(LBKT)    AS(RBKT)    &none   AS(SEMI)
+    &bootloader &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
+                            &trans      &none       &none       &kp LPAR    &kp RPAR    &kp UNDER
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+    &none       &none       &none       &none       &none       AS(LBKT)        AS(N7)      AS(N8)      AS(N9)  AS(RBKT)
+    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       AS(EQUAL)       AS(N4)      AS(N5)      AS(N6)  AS(SEMI)
+    &none       &none       &none       &none       &none       AS(GRAVE)       AS(N1)      AS(N2)      AS(N3)  AS(BSLH)
+                            &none       &trans      &none       &as LPAR DOT    &as RPAR N0 AS(MINUS)
             >;
         };
 
@@ -181,30 +217,12 @@
             >;
         };
 
-       prgrm_layer {
-           bindings = <
-    &sys_reset  &none       &none       &none       &none       &none   &none       &none       &none   &none
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       &none   AS(LBKT)    AS(RBKT)    &none   AS(SEMI)
-    &bootloader &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
-                            &trans      &none       &none       &kp LPAR    &kp RPAR    &kp UNDER
-            >;
-        };
-
         fun_layer {
             bindings = <
     &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       &none   &none       &none       &none       &none
     &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        &none   &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK &none   &none       &none       &none       &none
                     &kp K_APP   &kp SPACE   &kp TAB         &none   &none       &trans
-            >;
-        };
-
-        illust_fun_layer {
-            bindings = <
-    &kp F12 &kp F7  &kp F8          &kp F9          &kp LBKT        &none   &none   &none   &none   &none
-    &kp F11 &kp F4  &kp F5          &kp F6          &kp RBKT        &none   &none   &none   &none   &none
-    &kp F10 &kp F1  &kp F2          &kp F3          &kp BSLH        &none   &none   &none   &none   &none
-                    &sk LC(LSHFT)   &mt LSHFT LC(Z) &mt LCTRL LC(Y) &none   &none   &none
             >;
         };
 
