@@ -148,7 +148,7 @@
     &hmp LGUI Q  &kp W       &kp F        &kp P           &kp B         /**/  &kp J        &kp L          &kp U        &kp Y       &hmp LGUI SQT
     &kp A        &hm LALT R  &hm LCTRL S  &hm LSHFT T     &kp G         /**/  &kp M        &hm LSHFT N    &hm LCTRL E  &hm LALT I  &kp O
     &kp Z        &kp X       &kp C        &kp D           &kp V         /**/  &kp K        &kp H          &kp COMMA    &kp DOT     &kp FSLH
-                             &lt NAV ESC  &lt ARROW BSPC  &lt PRGRM TAB /**/  &lt FUN DEL  &lt NUM SPACE  &lt SYM RET
+                             &lt NAV ESC  &lt ARROW BSPC  &lt PRGRM TAB /**/  &lt FUN DEL  &lt NUM SPACE  &lt SYM ENTER
             >;
         };
 
@@ -215,7 +215,7 @@
     &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       /**/ &bt BT_CLR_ALL &none       &none       &none       &sys_reset
     &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        /**/ &none          &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK /**/ &none          &none       &none       &none       &bootloader
-                    &kp K_APP   &kp SPACE   &kp TAB         /**/ &none          &none       &trans
+                    &kp ESC     &kp BSPC    &kp TAB         /**/ &kp DEL        &kp SPACE   &kp ENTER
             >;
         };
 
