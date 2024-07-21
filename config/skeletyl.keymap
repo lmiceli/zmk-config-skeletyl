@@ -51,6 +51,8 @@
     combos {
         compatible = "zmk,combos";
 
+        // todo: many of these are most likely unused as I have no idea abt combos in zmk
+
         // Combos for media player.
         // I often switch songs while drawing, so I assign the
         // combos on left hand side.
@@ -143,20 +145,19 @@
 
        colemak_dh {
             bindings = <
-    &kp Q       &kp W       &kp F       &kp P           &kp B           &kp J       &kp L       &kp U       &kp Y           &kp SQT
-    //&hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
-    &kp A       &kp R       &kp S       &kp T           &kp G           &kp M       &kp N       &kp E       &kp I           &kp O
-    &kp Z       &kp X       &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &kp DOT    &kp FSLH
-                            &kp ESC     &lt ARROW BSPC  &lt PRGRM TAB   &kp DEL     &lt NAV SPACE &lt FUN RET
+    &hmp LGUI Q  &kp W       &kp F        &kp P           &kp B         /**/  &kp J        &kp L          &kp U        &kp Y       &hmp LGUI SQT
+    &kp A        &hm LALT R  &hm LCTRL S  &hm LSHFT T     &kp G         /**/  &kp M        &hm LSHFT N    &hm LCTRL E  &hm LALT I  &kp O
+    &kp Z        &kp X       &kp C        &kp D           &kp V         /**/  &kp K        &kp H          &kp COMMA    &kp DOT     &kp FSLH
+                             &lt NAV ESC  &lt ARROW BSPC  &lt PRGRM TAB /**/  &lt FUN DEL  &lt NUM SPACE  &lt SYM RET
             >;
         };
 
         nav_layer {
             bindings = <
-    &none       &mkp MB3        &mkp MB2    &mkp MB1        &none       &none       &none       &none       &none       &none
-    &kp END     &kp LEFT        &kp DOWN    &kp RIGHT       &kp INS     &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
-    &kp LC(Z)   &kp LC(LEFT)    &none       &kp LC(RIGHT)   &kp LC(Y)   &none       &none       &none       &none       &none
-                                &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none
+    &none &mkp MB3         &mkp MB2    &mkp MB1          &kp LC(PLUS)  /**/ &kp LC(LA(LG(1))) &kp LC(LA(LG(2))) &kp LC(LA(LG(3))) &kp LC(LA(LG(4))) &kp LC(LA(LG(5)))        &none       &none       &none
+    &none &kp LG(LC(LEFT)) &kp LG(TAB) &kp LG(LC(RIGHT)) &kp LC(PG_UP) /**/ &none             &kp LG(LEFT)      &kp LG(RIGHT)     &kp C_VOL_DN      &kp C_VOL_UP
+    &none &none            &none       &none             &kp LC(MINUS) /**/ &kp LS(LG(DEL))   &kp LS(LG(COMMA)) &kp LS(LG(DOT))   &kp C_PLAY        &kp C_MUTE
+                           &none       &none             &kp LA(TAB)   /**/ &none             &kp SPACE         &kp LA(F4)
             >;
         };
 
@@ -187,6 +188,8 @@
 //            >;
 //        };
 
+
+// i think this will eventually be mouse and bluetooth
        prgrm_layer {
            bindings = <
     &sys_reset  &none       &none       &none       &bt BT_CLR_ALL       &none   &none       &none       &none   &none
