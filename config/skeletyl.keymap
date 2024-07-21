@@ -154,10 +154,10 @@
 
         nav_layer {
             bindings = <
-    &none &mkp MB3         &mkp MB2    &mkp MB1          &kp LC(PLUS)  /**/ &kp LC(LA(LG(1))) &kp LC(LA(LG(2))) &kp LC(LA(LG(3))) &kp LC(LA(LG(4))) &kp LC(LA(LG(5)))        &none       &none       &none
-    &none &kp LG(LC(LEFT)) &kp LG(TAB) &kp LG(LC(RIGHT)) &kp LC(PG_UP) /**/ &none             &kp LG(LEFT)      &kp LG(RIGHT)     &kp C_VOL_DN      &kp C_VOL_UP
-    &none &none            &none       &none             &kp LC(MINUS) /**/ &kp LS(LG(DEL))   &kp LS(LG(COMMA)) &kp LS(LG(DOT))   &kp C_PLAY        &kp C_MUTE
-                           &none       &none             &kp LA(TAB)   /**/ &none             &kp SPACE         &kp LA(F4)
+    &none &mkp MB3         &mkp MB2    &mkp MB1          &kp LC(PLUS)  /**/ &kp LC(LA(LG(N1))) &kp LC(LA(LG(N2))) &kp LC(LA(LG(N3))) &kp LC(LA(LG(N4))) &kp LC(LA(LG(N5)))        &none       &none       &none
+    &none &kp LG(LC(LEFT)) &kp LG(TAB) &kp LG(LC(RIGHT)) &kp LC(PG_UP) /**/ &none              &kp LG(LEFT)       &kp LG(RIGHT)      &kp C_VOL_DN       &kp C_VOL_UP
+    &none &none            &none       &none             &kp LC(MINUS) /**/ &kp LS(LG(DEL))    &kp LS(LG(COMMA))  &kp LS(LG(DOT))    &kp C_PLAY         &kp C_MUTE
+                           &none       &none             &kp LA(TAB)   /**/ &none              &kp SPACE          &kp LA(F4)
             >;
         };
 
@@ -193,10 +193,11 @@
 
         sym_layer {
             bindings = <
-    &none       &none       &none       &none       &none       AS(LBKT)        AS(N7)      AS(N8)      AS(N9)  AS(RBKT)
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       AS(EQUAL)       AS(N4)      AS(N5)      AS(N6)  AS(SEMI)
-    &none       &none       &none       &none       &none       AS(GRAVE)       AS(N1)      AS(N2)      AS(N3)  AS(BSLH)
-                            &none       &trans      &none       &as LPAR DOT    &as RPAR N0 AS(MINUS)
+
+    &kp LBRC  &kp AMPS &kp ASTRK   &kp LPAR       &kp RBRC /**/    &none  &none      &none       &none       &kp LGUI
+    &kp COLON &kp DLLR &kp PERCENT &kp CARET      &kp PLUS /**/    &none  &kp LSHFT  &kp LCTRL   &kp LALT    &mkp MB1
+    &kp TILDE &kp EXCL &kp AT      &kp HASH       &kp PIPE /**/    &none  &mkp MB1   &none       &none       &none
+                       &kp RPAR    &kp UNDERSCORE &none    /**/    &none  &none      &none
             >;
         };
 
