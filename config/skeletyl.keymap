@@ -164,13 +164,12 @@
         arrow_layer {
             bindings = <
 
-    &kp LGUI     &mkp MB3    &mkp MB2    &mkp MB1    &none           &kp PG_UP &kp HOME     &kp UP   &kp END  &kp PG_DN
-//LALT(KC_LEFT), KC_LALT,    KC_LCTL,    KC_LSFT,    LALT(KC_RGHT), /**/ LCTL(KC_PGUP), KC_LEFT, KC_DOWN, KC_RGHT, LCTL(KC_PGDN),
-//        LCTL(KC_Z),    LCTL(KC_X), LCTL(KC_C), LCTL(KC_V), KC_NO,         /**/ KC_CAPS,  KC_F11, KC_F7,   KC_F8,   KC_F9,
-//        ALT_TAB,  KC_NO,   KC_NO,  /**/ KC_PGUP, ALT_TAB, KC_PGDN
-    &none       &none        &none       &none       &none           &none     &kp LEFT     &kp DOWN &kp RIGHT &none
-    &none       &none        &none       &none       &none           &none     &none        &none    &none     &none
-                             &none       &none       &none           &none     &kp SPACE    &kp LA(F4)
+    &kp LGUI     &mkp MB3    &mkp MB2    &mkp MB1    &none            /**/   &kp PG_UP     &kp HOME    &kp UP   &kp END   &kp PG_DN
+    &kp LA(LEFT) &kp LALT    &kp LCTRL   &kp LSHFT   &kp LA(RIGHT)    /**/   &kp LC(PG_UP) &kp LEFT    &kp DOWN &kp RIGHT &kp LC(PG_DN)
+    &kp LC(Z)    &kp LC(X)   &kp LC(C)   &kp LC(V)   &none            /**/   &kp CAPS      &kp F11     &kp F7   &kp F8    &kp F9
+                             &kp LA(TAB) &none       &none            /**/   &kp PG_UP     &kp LA(TAB) &kp PG_UP
+// todo:                          replace all LA(TAB) with -> ALT_TAB, maybe find better use for some of the keys
+
             >;
         };
 
