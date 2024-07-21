@@ -203,22 +203,23 @@
 
         num_layer {
             bindings = <
-    &none       &none       &none       &none       &none       AS(LBKT)        AS(N7)      AS(N8)      AS(N9)  AS(RBKT)
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       AS(EQUAL)       AS(N4)      AS(N5)      AS(N6)  AS(SEMI)
-    &none       &none       &none       &none       &none       AS(GRAVE)       AS(N1)      AS(N2)      AS(N3)  AS(BSLH)
-                            &none       &trans      &none       &as LPAR DOT    &as RPAR N0 AS(MINUS)
+    &kp LBRC      &kp N7 &kp N8 &kp N9 &kp RBRC      /**/    &none  &none      &none       &none       &kp LGUI
+    &kp SEMICOLON &kp N4 &kp N5 &kp N6 &kp EQUAL     /**/    &none  &kp LSHFT  &kp LCTRL   &kp LALT    &mkp MB1
+    &kp GRAVE     &kp N1 &kp N2 &kp N3 &kp BACKSLASH /**/    &none  &mkp MB1   &none       &none       &none
+                         &none  &kp MINUS  &none     /**/    &none  &none      &none
             >;
         };
 
         fun_layer {
             bindings = <
-    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       &bt BT_CLR_ALL &none       &none       &none       &sys_reset
-    &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        &none          &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
-    &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK &none          &none       &none       &none       &bootloader
-                    &kp K_APP   &kp SPACE   &kp TAB         &none          &none       &trans
+    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       /**/ &bt BT_CLR_ALL &none       &none       &none       &sys_reset
+    &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        /**/ &none          &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
+    &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK /**/ &none          &none       &none       &none       &bootloader
+                    &kp K_APP   &kp SPACE   &kp TAB         /**/ &none          &none       &trans
             >;
         };
 
+// not used atm
         game_layer {
             bindings = <
     &kp F12 &kp Q  &kp W  &kp E  &kp R              &kp LGUI   &kp U   &kp I   &kp O   &kp LCTRL
