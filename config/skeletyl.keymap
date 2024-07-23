@@ -202,7 +202,7 @@
 
         num_layer {
             bindings = <
-    &kp LBRC      &kp N7 &kp N8 &kp N9 &kp RBRC      /**/    &none  &none      &none       &none       &kp LGUI
+    &kp LBKT      &kp N7 &kp N8 &kp N9 &kp RBKT      /**/    &none  &none      &none       &none       &kp LGUI
     &kp SEMICOLON &kp N4 &kp N5 &kp N6 &kp EQUAL     /**/    &none  &kp LSHFT  &kp LCTRL   &kp LALT    &mkp MB1
     &kp GRAVE     &kp N1 &kp N2 &kp N3 &kp BACKSLASH /**/    &none  &mkp MB1   &none       &none       &none
                          &kp N0 &kp MINUS  &none     /**/    &none  &none      &none
