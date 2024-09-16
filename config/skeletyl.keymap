@@ -188,52 +188,42 @@ prgrm_layer {
 
         sym_layer {
             bindings = <
-
-
-
-
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp LBRC      &kp AMPS      &kp ASTRK     &kp LPAR       &kp RBRC         &none         &none         &none         &none         &kp LGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp COLON     &kp DLLR      &kp PERCENT   &kp CARET      &kp PLUS         &none         &kp LSHFT     &kp LCTRL     &kp LALT      &mkp MB1
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp TILDE     &kp EXCL      &kp AT        &kp HASH       &kp PIPE         &none         &mkp MB1      &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                 &kp RPAR    &kp UNDERSCORE   &none            &none         &none         &none
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-
-
-
-    &kp LBRC  &kp AMPS &kp ASTRK   &kp LPAR       &kp RBRC /**/    &none  &none      &none       &none       &kp LGUI
-    &kp COLON &kp DLLR &kp PERCENT &kp CARET      &kp PLUS /**/    &none  &kp LSHFT  &kp LCTRL   &kp LALT    &mkp MB1
-    &kp TILDE &kp EXCL &kp AT      &kp HASH       &kp PIPE /**/    &none  &mkp MB1   &none       &none       &none
-                       &kp RPAR    &kp UNDERSCORE &none    /**/    &none  &none      &none
             >;
         };
-
         num_layer {
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &none         &none         &none         &none         &kp LGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp SEMICOLON &kp N4        &kp N5        &kp N6        &kp EQUAL         &none         &kp LSHFT     &kp LCTRL     &kp LALT      &mkp MB1
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp BACKSLASH     &none         &mkp MB1      &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                 &kp N0        &kp MINUS     &none             &none         &none         &none
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-
-    &kp LBKT      &kp N7 &kp N8 &kp N9 &kp RBKT      /**/    &none  &none      &none       &none       &kp LGUI
-    &kp SEMICOLON &kp N4 &kp N5 &kp N6 &kp EQUAL     /**/    &none  &kp LSHFT  &kp LCTRL   &kp LALT    &mkp MB1
-    &kp GRAVE     &kp N1 &kp N2 &kp N3 &kp BACKSLASH /**/    &none  &mkp MB1   &none       &none       &none
-                         &kp N0 &kp MINUS  &none     /**/    &none  &none      &none
             >;
         };
 
         fun_layer {
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp F12       &kp F7        &kp F8        &kp F9        &kp PSCRN        &bt BT_CLR_ALL &none         &none         &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp F11       &kp F4        &kp F5        &kp F6        &kp SLCK         &none          &kp LSHFT     &kp LCTRL     &kp LALT      &kp LGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp F10        &kp F1        &kp F2        &kp F3      &kp PAUSE_BREAK     &none         &none         &none         &none         &bootloader
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                 &kp ESC       &kp BSPC      &kp TAB           &kp DEL       &kp SPACE     &kp ENTER
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-
-    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       /**/ &bt BT_CLR_ALL &none       &none       &none       &none
-    &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        /**/ &none          &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
-    &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK /**/ &none          &none       &none       &none       &bootloader
-                    &kp ESC     &kp BSPC    &kp TAB         /**/ &kp DEL        &kp SPACE   &kp ENTER
             >;
         };
 
