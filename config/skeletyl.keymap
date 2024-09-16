@@ -174,7 +174,7 @@
 prgrm_layer {
            bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &sys_reset    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN     &none
+     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN     &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT    &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -230,7 +230,7 @@ prgrm_layer {
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 
-    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       /**/ &bt BT_CLR_ALL &none       &none       &none       &sys_reset
+    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       /**/ &bt BT_CLR_ALL &none       &none       &none       &none
     &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        /**/ &none          &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
     &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK /**/ &none          &none       &none       &none       &bootloader
                     &kp ESC     &kp BSPC    &kp TAB         /**/ &kp DEL        &kp SPACE   &kp ENTER
