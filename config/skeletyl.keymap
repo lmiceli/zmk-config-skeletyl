@@ -174,11 +174,11 @@
 prgrm_layer {
            bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &sys_reset    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none      &msc SCRL_DOWN &mmv MOVE_UP   &msc SCRL_UP     &none
+     &sys_reset    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN     &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &none
+     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT    &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &bootloader   &none         &none         &bt BT_CLR   &bt BT_CLR_ALL     &none      &msc SCRL_LEFT &none          &msc SCRL_RIGHT  &none
+     &bootloader   &none         &none         &bt BT_CLR   &bt BT_CLR_ALL     &none       &msc SCRL_LEFT &none          &msc SCRL_RIGHT    &none
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &trans        &mkp MB1      &trans            &mkp MB3      &mkp MB1      &mkp MB2
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
