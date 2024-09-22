@@ -2,7 +2,7 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
 
 #include <dt-bindings/zmk/mouse.h>
-
+// no parece q haga nada
 &mmv {
     acceleration-exponent = <2>;      // 1
     time-to-max-speed-ms = <1500>;    // 300
