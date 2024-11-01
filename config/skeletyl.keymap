@@ -52,7 +52,6 @@
     combos {
         compatible = "zmk,combos";
 
-        // todo: many of these are most likely unused as I have no idea abt combos in zmk
         // todo: add combo for capslock
 
         // Combos for media player.
@@ -97,26 +96,26 @@
 
         // Combo for bluetooth control
         // (i.e. switch among the devices).
-        combo_bt_next {
-            timeout-ms = <50>; // ,.
-            key-positions = <27 28>;
-            bindings = <&bt BT_NXT>;
-        };
-        combo_bt_prev {
-            timeout-ms = <50>; //H,wb
-            key-positions = <26 27>;
-            bindings = <&bt BT_PRV>;
-        };
-        combo_bt_clr {
-            timeout-ms = <50>;
-            key-positions = <0 9>;
-            bindings = <&bt BT_CLR>;
-        };
-        combo_bt_out_tog {
-            timeout-ms = <50>;
-            key-positions = <4 5>;
-            bindings = <&out OUT_TOG>;
-        };
+//        combo_bt_next {
+//            timeout-ms = <50>; // ,.
+//            key-positions = <27 28>;
+//            bindings = <&bt BT_NXT>;
+//        };
+//        combo_bt_prev {
+//            timeout-ms = <50>; //H,wb
+//            key-positions = <26 27>;
+//            bindings = <&bt BT_PRV>;
+//        };
+//        combo_bt_clr {
+//            timeout-ms = <50>;
+//            key-positions = <0 9>;
+//            bindings = <&bt BT_CLR>;
+//        };
+//        combo_bt_out_tog {
+//            timeout-ms = <50>;
+//            key-positions = <4 5>;
+//            bindings = <&out OUT_TOG>;
+//        };
 
     };
 
@@ -174,7 +173,7 @@
 prgrm_layer {
            bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN     &none
+     &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &none       &msc SCRL_UP   &mmv MOVE_UP   &msc SCRL_DOWN     &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT    &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
