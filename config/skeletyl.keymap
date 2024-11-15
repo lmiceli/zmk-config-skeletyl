@@ -128,7 +128,7 @@ colemak_dh { bindings = <  // BASE LAYER
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp Z         &kp X         &kp C         &kp D            &kp V             &kp K      &lt PRGRM H   &kp COMMA     &kp DOT      &kp FSLH
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                               &lt NAV ESC   &lt ARROW BSPC &lt PRGRM TAB     &lt FUN DEL   &lt NUM SPACE &lt SYM ENTER
+                               &lt NAV ESC   &lt ARROW SPC  &lt PRGRM TAB     &lt SYM ENTER  &lt NUM BSPC  &lt FUN DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 >; };
 nav_layer { bindings = <  // WINDOW NAVIGATION AND MANAGEMENT
@@ -139,7 +139,7 @@ nav_layer { bindings = <  // WINDOW NAVIGATION AND MANAGEMENT
 // ├─────────────┼────────────────┼─────────────┼────────────────┼─────────────┤   ├───────────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────┤
     &none         &none            &none         &none            &kp LC(MINUS)     &kp LS(LG(DEL))     &kp LS(LG(COMMA))   &kp LS(LG(DOT))     &kp C_PLAY          &kp C_MUTE
 // ╰─────────────┴────────────────┴─────────────┼────────────────┼─────────────┤   ├───────────────────┼───────────────────┼───────────────────┴───────────────────┴────────────────╯
-                                   &none         &none            &kp LA(TAB)       &none               &kp SPACE           &kp LA(F4)
+                                   &none         &none            &kp LA(TAB)       &none               &kp BSPC            &kp LA(F4)
 //                                ╰─────────────┴────────────────┴─────────────╯   ╰───────────────────┴───────────────────┴───────────────────╯
 >; };
 arrow_layer { bindings = <     // ARROWS   (RIGHT HOME THUMB PRESSED)
@@ -172,7 +172,7 @@ fun_layer { bindings = <       // FUNCTION AND RIGHT HAND RESET
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp F10        &kp F1        &kp F2        &kp F3      &kp PAUSE_BREAK     &none         &none         &none         &sys_reset    &bootloader
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &kp ESC       &kp BSPC      &kp TAB           &kp DEL       &kp SPACE     &kp ENTER
+                                 &kp ESC       &kp SPC       &kp TAB           &kp ENTER     &kp BSPC      &kp DEL
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 >; };
 sym_layer { bindings = <        // SYMBOL
