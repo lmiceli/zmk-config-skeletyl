@@ -167,11 +167,11 @@ prgrm_layer { bindings = <      // MOUSE, BLUETOOTH AND LEFT HAND RESET
 >; };
 sym_layer { bindings = <        // SYMBOL
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LBRC      &kp AMPS      &kp ASTRK     &kp LPAR       &kp RBRC         &kp AMPS     &kp SEMICOLON &kp LBKT       &kp RBKT      &kp PERCENT
+     &kp LBRC      &kp AMPS      &kp ASTRK     &kp LPAR       &kp RBRC         &kp AMPS     &kp LBKT      &kp RBKT      &kp SEMICOLON &kp PERCENT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp COLON     &kp DLLR      &kp PERCENT   &kp EQUAL      &kp PLUS         &kp PIPE     &kp COLON     &kp LPAR       &kp RPAR      &kp QUESTION
+     &kp COLON     &kp DLLR      &kp PERCENT   &kp EQUAL      &kp PLUS         &kp PIPE     &kp LPAR      &kp RPAR      &kp COLON     &kp QUESTION
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp TILDE     &kp EXCL      &kp AT        &kp HASH       &kp PIPE         &kp TILDE    &kp DOLLAR    &kp LBRC       &kp RBRC      &kp AT
+     &kp TILDE     &kp EXCL      &kp AT        &kp HASH       &kp PIPE         &kp TILDE    &kp LBRC      &kp RBRC      &kp DOLLAR    &kp AT
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &kp MINUS    &kp UNDERSCORE  &kp LCTRL         &none         &none         &none
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
