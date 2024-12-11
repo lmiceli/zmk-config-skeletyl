@@ -6,7 +6,7 @@
 
 // Modified keymap based on personal experience, with some improvements based on Miryoku layout.
 
-#define COLDH   0
+#define BASE    0
 #define NAV     1
 #define ARROW   2
 #define MOU     3
