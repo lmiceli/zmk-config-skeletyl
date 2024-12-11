@@ -129,28 +129,28 @@
 
         BASE {
             bindings = <
-&hmp LGUI Q  &kp W        &kp F         &kp P          &kp B                                       &kp J          &kp L          &kp U         &kp Y        &hmp LGUI LA(BSPC)
-&lt NAV A    &hmp LALT R  &hmp LCTRL S  &hmp LSHFT T   &kp G                                       &kp M          &hmp LSHFT N   &hmp LCTRL E  &hmp LALT I  &lt FUN O
-&kp Z        &kp X        &kp C         &kp D          &kp V                                       &kp K          &lt MOU H      &kp COMMA     &kp DOT      &kp FSLH
-                                        &hm LSHFT ESC  &lt ARROW SPACE  &lt MOU TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
+&hmp LEFT_CONTROL Q  &kp W        &kp F        &kp P          &kp B                                       &kp J          &kp L          &kp U        &kp Y        &hmp LCTRL LA(BSPC)
+&lt NAV A            &hmp LALT R  &hmp LGUI S  &hmp LSHFT T   &kp G                                       &kp M          &hmp LSHFT N   &hmp LGUI E  &hmp LALT I  &lt FUN O
+&kp Z                &kp X        &kp C        &kp D          &kp V                                       &kp K          &lt MOU H      &kp COMMA    &kp DOT      &kp FSLH
+                                               &hm LSHFT ESC  &lt ARROW SPACE  &lt MOU TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
             >;
         };
 
         NAV {
             bindings = <
-&none  &none  &none  &none  &none                          &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))
-&none  &none  &none  &none  &none                          &kp LC(PLUS)        &kp LG(LEFT)        &kp LG(RIGHT)       &kp C_VOL_DN        &kp C_VOL_UP
-&none  &none  &none  &none  &none                          &kp LC(MINUS)       &kp LS(LG(COMMA))   &kp LS(LG(DOT))     &kp C_PLAY          &kp C_MUTE
-                     &none  &none  &none  &kp LS(LG(DEL))  &kp BSPC            &none
+&none  &none                   &none        &none              &none                          &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))
+&none  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &none                          &kp LC(PLUS)        &kp LG(LEFT)        &kp LG(RIGHT)       &kp C_VOL_DN        &kp C_VOL_UP
+&none  &none                   &none        &none              &none                          &kp LC(MINUS)       &kp LS(LG(COMMA))   &kp LS(LG(DOT))     &kp C_PLAY          &kp C_MUTE
+                                            &none              &none  &none  &kp LS(LG(DEL))  &kp BSPC            &none
             >;
         };
 
         ARROW {
             bindings = <
-&kp LGUI      &mkp MB3          &mkp MB2     &mkp MB1           &none                          &kp PG_UP      &kp HOME  &kp UP    &kp END    &kp PG_DN
-&kp LA(LEFT)  &kp LALT          &kp LCTRL    &kp LSHFT          &kp LA(RIGHT)                  &kp LC(PG_UP)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(PG_DN)
-&none         &kp LG(LC(LEFT))  &kp LG(TAB)  &kp LG(LC(RIGHT))  &none                          &kp CAPS       &kp F11   &kp F7    &kp F8     &kp F9
-                                             &kp LA(TAB)        &none          &none  &kp DEL  &kp BSPC       &none
+&kp LCTRL     &mkp MB3  &mkp MB2  &mkp MB1           &none                          &kp PG_UP      &kp HOME  &kp UP    &kp END    &kp PG_DN
+&kp LA(LEFT)  &kp LALT  &kp LGUI  &kp LSHFT          &kp LA(RIGHT)                  &kp LC(PG_UP)  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(PG_DN)
+&none         &none     &none     &kp LG(LC(RIGHT))  &none                          &kp CAPS       &kp F11   &kp F7    &kp F8     &kp F9
+                                  &kp LA(TAB)        &none          &none  &kp DEL  &kp BSPC       &none
             >;
         };
 
