@@ -138,10 +138,10 @@
 
         NAV {
             bindings = <
-&none  &none                   &none        &none              &none                          &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))
-&none  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &none                          &kp LC(PLUS)        &kp LG(LEFT)        &kp LG(RIGHT)       &kp C_VOL_DN        &kp C_VOL_UP
-&none  &none                   &none        &none              &none                          &kp LC(MINUS)       &kp LS(LG(COMMA))   &kp LS(LG(DOT))     &kp C_PLAY          &kp C_MUTE
-                                            &none              &none  &none  &kp LS(LG(DEL))  &kp BSPC            &none
+&none  &none                   &none        &none              &none                                &kp LC(LA(LG(N1)))  &kp LC(LA(LG(N2)))  &kp LC(LA(LG(N3)))  &kp LC(LA(LG(N4)))  &kp LC(LA(LG(N5)))
+&none  &kp LC(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &none                                &kp LC(PLUS)        &kp LG(LEFT)        &kp LG(RIGHT)       &kp C_VOL_DN        &kp C_VOL_UP
+&none  &none                   &none        &none              &none                                &kp LC(MINUS)       &kp LS(LG(COMMA))   &kp LS(LG(DOT))     &kp C_PLAY          &kp C_MUTE
+                                            &mkp MB3           &mkp MB1  &mkp MB2  &kp LS(LG(DEL))  &kp BSPC            &none
             >;
         };
 
