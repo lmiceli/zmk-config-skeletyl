@@ -131,8 +131,8 @@
             bindings = <
 &hmp LGUI Q  &kp W        &kp F         &kp P          &kp B                                       &kp J          &kp L          &kp U         &kp Y        &hmp LGUI LA(BSPC)
 &lt NAV A    &hmp LALT R  &hmp LCTRL S  &hmp LSHFT T   &kp G                                       &kp M          &hmp LSHFT N   &hmp LCTRL E  &hmp LALT I  &lt FUN O
-&kp Z        &kp X        &kp C         &kp D          &kp V                                       &kp K          &lt MOU H    &kp COMMA     &kp DOT      &kp FSLH
-                                        &hm LSHFT ESC  &lt ARROW SPC  &lt MOU TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
+&kp Z        &kp X        &kp C         &kp D          &kp V                                       &kp K          &lt MOU H      &kp COMMA     &kp DOT      &kp FSLH
+                                        &hm LSHFT ESC  &lt ARROW SPACE  &lt MOU TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
             >;
         };
 
@@ -153,6 +153,7 @@
                                              &kp LA(TAB)        &none          &none  &kp DEL  &kp BSPC       &none
             >;
         };
+
         MOU {
             bindings = <
 &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none                             &none     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none
@@ -164,9 +165,9 @@
 
         SYM {
             bindings = <
-&kp SQT    &kp LT     &kp GST    &kp DQT        &kp DOT                           &kp AMPS   &kp LBKT  &kp RBKT  &kp SEMICOLON  &kp PERCENT
+&kp SQT    &kp LT     &kp GT     &kp DQT        &kp DOT                           &kp AMPS   &kp LBKT  &kp RBKT  &kp SEMICOLON  &kp PERCENT
 &kp EXCL   &kp MINUS  &kp PLUS   &kp EQUAL      &kp HASH                          &kp PIPE   &kp LPAR  &kp RPAR  &kp COLON      &kp QUESTION
-&kp CARET  &kp FSLH   &kp ASTRK  &kp BACKSLASH  &kp GRAV                          &kp TILDE  &kp LBRC  &kp RBRC  &kp DOLLAR     &kp AT
+&kp CARET  &kp FSLH   &kp ASTRK  &kp BACKSLASH  &kp GRAVE                         &kp TILDE  &kp LBRC  &kp RBRC  &kp DOLLAR     &kp AT
                                  &kp BSPC       &kp UNDERSCORE  &kp LCTRL  &none  &none      &none
             >;
         };
@@ -185,7 +186,7 @@
 &kp F12  &kp F7  &kp F8  &kp F9   &kp PSCRN                            &bt BT_CLR_ALL  &none      &none      &none       &none
 &kp F11  &kp F4  &kp F5  &kp F6   &kp SLCK                             &none           &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI
 &kp F10  &kp F1  &kp F2  &kp F3   &kp PAUSE_BREAK                      &none           &none      &none      &sys_reset  &bootloader
-                         &kp ESC  &kp SPC          &kp TAB  &kp ENTER  &kp BSPC        &kp DEL
+                         &kp ESC  &kp SPACE        &kp TAB  &kp ENTER  &kp BSPC        &kp DEL
             >;
         };
     };
