@@ -9,7 +9,7 @@
 #define COLDH   0
 #define NAV     1
 #define ARROW   2
-#define PRGRM   3 // for now, instead of mouse
+#define MOU     3
 #define SYM     4
 #define NUM     5
 #define FUN     6
@@ -133,8 +133,8 @@
             bindings = <
 &hmp LGUI Q  &kp W        &kp F         &kp P          &kp B                                       &kp J          &kp L          &kp U         &kp Y        &hmp LGUI LA(BSPC)
 &lt NAV A    &hmp LALT R  &hmp LCTRL S  &hmp LSHFT T   &kp G                                       &kp M          &hmp LSHFT N   &hmp LCTRL E  &hmp LALT I  &lt FUN O
-&kp Z        &kp X        &kp C         &kp D          &kp V                                       &kp K          &lt PRGRM H    &kp COMMA     &kp DOT      &kp FSLH
-                                        &hm LSHFT ESC  &lt ARROW SPC  &lt PRGRM TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
+&kp Z        &kp X        &kp C         &kp D          &kp V                                       &kp K          &lt MOU H    &kp COMMA     &kp DOT      &kp FSLH
+                                        &hm LSHFT ESC  &lt ARROW SPC  &lt MOU TAB  &lt NUM BSPC  &lt SYM ENTER  &hmp LGUI DEL
             >;
         };
 
